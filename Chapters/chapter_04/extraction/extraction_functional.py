@@ -36,7 +36,7 @@ def source_data_from_csv(csv_file_name):
 
 def source_data_from_api(api_endpoint):
     try:
-        # Check if API is available to retrive the data
+        # Check if API is available to retrieve the data
         # Sometimes we get certificate error . We should never silence this error as this may cause a securirty threat.
         # Create a Pool manager that can be used to read the API response 
         http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED',ca_certs=certifi.where())
